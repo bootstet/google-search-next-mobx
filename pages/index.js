@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import UrlList from './urlList'
-import UrlListStore from './store/urlNetListStore'
-import UrlItemStore from './store/urlNetItemStore'
+import UrlListStore from '../store/urlNetListStore'
+import UrlItemStore from '../store/urlNetItemStore'
 
 const urlListPageStore = new UrlListStore()
 

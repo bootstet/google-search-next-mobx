@@ -17,8 +17,8 @@ import {
   Button
 } from "@chakra-ui/react"
 
-function UrlList({ urlListPageStore }) {
-  const { createUrlStore, urls } = urlListPageStore
+function UrlList({ urlListPageStore = {} }) {
+  const { createUrlStore, urls = [] } = urlListPageStore
   const [ visible, setVisible ] = useState(false)
   const [ name, setName ] = useState('')
   const [ url, setUrl ] = useState('')
